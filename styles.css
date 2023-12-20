@@ -23,7 +23,6 @@
 body{
     font-family: 'Work Sans', sans-serif;
     width: 100%;
-    height: 100vh;
     background-color: var(--Light_pink);
     font-size: 16px;
 }
@@ -44,7 +43,6 @@ section{
     background-color: var(--White);
     padding: 20px;
     border-radius: 10px;
-    overflow: scroll;
     margin-bottom: 30px;
     min-height: 500px;
     display: grid;
