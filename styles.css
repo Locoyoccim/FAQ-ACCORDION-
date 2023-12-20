@@ -1,0 +1,130 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light_pink: hsl(275, 100%, 97%);
+  --Grayish_purple: hsl(292, 16%, 49%);
+  --Dark_purple: hsl(292, 42%, 14%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:end;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Light_pink);
+    font-size: 16px;
+}
+.img_container{
+    width: 100%;
+    height: 232px;
+}
+.top_img{
+    width: 100%;
+    height: 100%;
+}
+section{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: scroll;
+    margin-bottom: 30px;
+    min-height: 500px;
+    display: grid;
+    align-content: center;
+}
+.title{
+    display: flex;
+}
+.title > img{
+    width: 30px;
+}
+h1{
+    margin-left: 20px;
+}
+.questions{
+    margin: 5px 0;
+    width: 100%;
+}
+.questions > div{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.icon_minus{
+    display: none;
+}
+.icon_minus, .icon_plus{
+    margin-left: 20px;
+    transition: transform 1.2s ease;
+}
+.icon_minus:hover, .icon_plus:hover{
+    transform: scale(1.1);
+}
+h2{
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+h2:hover{
+    color: var(--Grayish_purple);
+}
+article{
+    color: var(--Grayish_purple);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 5px;
+    transition: max-height 1.2s ease;
+    cursor: pointer;
+}
+article.open{
+    max-height: 200px;
+}
+@media screen and (min-width: 380px) {
+    .top_img{
+        display: none;
+    }
+    .img_container{
+        background-image: url(/assets/images/background-pattern-desktop.svg);
+        background-position: center;
+    }
+    section{
+        transform: translate(-50%,-50%);
+        width: 90%;
+    }
+    
+}
+@media screen and (min-width: 750px){
+    section{
+        transform: translate(-50%,-50%);
+        width: 40%;
+    }
+}
+
+
+

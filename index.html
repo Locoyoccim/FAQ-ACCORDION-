@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>FAQ accordion</title>
+    <!-- NORMALIZE-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@300&family=Inter:wght@400;700;800&family=Lexend+Deca&family=Montserrat&family=Poppins:ital,wght@0,300;0,700;1,400;1,700;1,800&family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&family=Work+Sans:wght@400;600;700&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/script.js" ></script>
+  </head>
+  <body>
+    <div class="img_container">
+      <img
+      class="top_img"
+        src="/assets/images/background-pattern-mobile.svg"
+        alt="img_mobile"
+      />
+    </div>
+    <section class="main_container">
+      <div class="title">
+        <img src="/assets/images/icon-star.svg" alt="star" />
+        <h1>FAQs</h1>
+      </div>
+
+      <div class="questions">
+        <div>
+          <h2>What is Frontend Mentor, and how will it help me?</h2>
+          <button class="icon_plus" id="bp1">
+            <img src="/assets/images/icon-plus.svg" alt="+" />
+          </button>
+          <button class="icon_minus" id="bm1">
+            <img src="/assets/images/icon-minus.svg" alt="-" />
+          </button>
+        </div>
+
+        <article id="ar1"> <p></p>
+          Frontend Mentor offers realistic coding challenges to help developers
+          improve their frontend coding skills with projects in HTML, CSS, and
+          JavaScript. It's suitable for all levels and ideal for portfolio
+          building.
+        </article>
+      </div><hr>
+      <div class="questions">
+        <div>
+          <h2>Is Frontend Mentor free?</h2>
+          <button class="icon_plus"  id="bp2">
+            <img src="/assets/images/icon-plus.svg" alt="+"/>
+          </button>
+          <button class="icon_minus" id="bm2">
+            <img src="/assets/images/icon-minus.svg" alt="-"  />
+          </button>
+        </div>
+
+        <article id="ar2">
+          Yes, Frontend Mentor offers both free and premium coding challenges,
+          with the free option providing access to a range of projects suitable
+          for all skill levels.
+        </article>
+      </div><hr>
+      <div class="questions">
+        <div>
+          <h2>Can I use Frontend Mentor projects in my portfolio?</h2>
+          <button class="icon_plus" id="bp3">
+            <img src="/assets/images/icon-plus.svg" alt="+" />
+          </button>
+          <button class="icon_minus" id="bm3">
+            <img src="/assets/images/icon-minus.svg" alt="-"  />
+          </button>
+        </div>
+
+        <article id="ar3">
+          Yes, you can use projects completed on Frontend Mentor in your
+          portfolio. It's an excellent way to showcase your skills to potential
+          employers!
+        </article>
+      </div><hr>
+      <div class="questions">
+        <div>
+          <h2>
+            How can I get help if I'm stuck on challenge?
+          </h2>
+          <button class="icon_plus" id="bp4">
+            <img src="/assets/images/icon-plus.svg" alt="+"  />
+          </button>
+          <button class="icon_minus" id="bm4">
+            <img src="/assets/images/icon-minus.svg" alt="-"  />
+          </button>
+        </div>
+
+        <article id="ar4">
+          The best place to get help is inside Frontend Mentor's Discord
+          community. There's a help channel where you can ask questions and seek
+          support from other community members.
+        </article>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
